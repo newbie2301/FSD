@@ -105,8 +105,8 @@ export function PageHeader({ title, subtitle, action }) {
   );
 }
 
-export function Card({ children, style = {} }) {
-  return <div style={{ background: '#fff', border: '1px solid rgba(0,0,0,0.09)', borderRadius: 12, ...style }}>{children}</div>;
+export function Card({ children, style = {}, onClick }) {
+  return <div onClick={onClick} style={{ background: '#fff', border: '1px solid rgba(0,0,0,0.09)', borderRadius: 12, ...style }}>{children}</div>;
 }
 
 export function Badge({ label, color, bg }) {
